@@ -10,7 +10,7 @@
 
 import os
 
-fpath = "C:\\Users\\madel\\Desktop\\Python\\Drill2Files"
+fpath = "C:\\Users\\madel\\Desktop\\Python\\Drills\\Drill2Files"
 
 for obj in os.listdir(fpath):
     mtime = os.path.getmtime(fpath)
