@@ -33,13 +33,3 @@ if __name__ == '__main__':
 
     root.mainloop()
 
-
-
-
-if __name__ == "__main__":
-    root = Tk()
-    App = ParentWindow(root)
-
-    selection, text = UserFileInput("", "Directory")
-
-    root.mainloop()
