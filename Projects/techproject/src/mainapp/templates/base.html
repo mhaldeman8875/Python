@@ -11,14 +11,14 @@
 	</head>
     <body>
         <div class="page_container">
-            <!-- {% include "navbar.html" %} -->
+            {% include "navbar.html" %}
             <header class="header-title">
                 <h1>{% block header %}{% endblock %}</h1>
 		    </header>
             {% block content %}{% endblock %}
         </div>
 
-        <!-- {% include "footer.html" %} -->
+        {% include "footer.html" %}
     </body>
 </html>
 
