@@ -7,3 +7,5 @@ class Product(models.Model):
   description = models.TextField(max_length=100, default="", blank=True)
   price = models.DecimalField(default=0.00, max_digits=10000, decimal_places=2)
   image = models.CharField(max_length=255, default="", blank=True,)
+
+  #this is a test
