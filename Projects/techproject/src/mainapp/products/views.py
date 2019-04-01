@@ -22,3 +22,12 @@ def details(request, pk):
             print(form.errors)
     else:
         return render(request, 'products/present_product.html', {'form': form})
+
+def delete(request, pk):
+    pk = int(pk)
+    item = get_object_or_404(Product, pk=pk)
+    if request.method == 'POST':
+        item.delete()
+        return redirect('admin_console')
+    context = {"item": item,}
+    return render(request, "products/confirmDelete.html", context)
